@@ -1,30 +1,32 @@
 import React from 'react'
 
-export default function Result(props) {
-    return (
-        <div>
-            <h1>
-                {props.word}
-            </h1>
-            <h2>
-                {props.phonetics}
-            </h2>
-            <audio controls>
-                <source src={props.audio} type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio>
-            <hr />
+export default function Result({ Data }) {
+    const iData = Data.map((data, index) => {
+        console.log(data)
+        return (
+            <div className="item" key={index}>
+                <h1>{data.word}</h1>
 
-            <h2>meanings:</h2>
-            <p>
-                partOfSpeech: {props.partOfSpeech}
 
-                definitions: {props.definitions}
+                {data.phonetics.map((item, key) => {
+                    // <p>{item.text}</p>
 
-                more:
+                    return (<div key={key} >
+                        <p>{item.text}</p>
+                        {
+                            item.audio && <audio controls>
+                                <source src={item.audio} />
+                            </audio>
+                        }
+                    </div>)
+                })}
 
-                {props.more}
-            </p>
-        </div>
-    )
+
+
+            </div >
+        )
+
+    })
+    return iData
+
 }

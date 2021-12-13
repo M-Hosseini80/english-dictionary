@@ -4,7 +4,7 @@ This project is only a beta and personal version
 The API of this project :
 https://dictionaryapi.dev/
 
-Generate one or more common English words library:
+Generate one or more common English words by:
 https://www.npmjs.com/package/random-words
 
 

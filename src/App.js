@@ -41,11 +41,15 @@ function App() {
 
   // console.log("Props in App :", value);
   return (
-    <div className="App">
-      <Input value={value} onChange={handleChange} />
-      {/* <Translator value={value}/> */}
-      <Result Data={dataWord} />
-    </div>
+    <>
+      <div className="App">
+        <Input value={value} onChange={handleChange} />
+        {/* <Translator value={value}/> */}
+        <Result Data={dataWord} />
+
+      </div>
+      <footer><p> &lt;/&gt; by: <a href="https://mohamadhossein.ir/">MohamadHossein.ir</a> </p><p><a rel="noreferrer" target="_blank" href="https://github.com/M-Hosseini80/english-dictionary">github / Terms of Use</a></p></footer>
+    </>
   );
 }
 

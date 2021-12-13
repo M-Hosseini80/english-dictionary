@@ -1,5 +1,6 @@
 # Terms of Use
 This project is only a beta and personal version
+
 The API of this project :
 https://dictionaryapi.dev/
 
@@ -17,7 +18,7 @@ https://www.projects.mohamadhossein.ir/
 
 
 
-<p align="center"><img src="https://www.projects.mohamadhossein.ir/calculator/static/media/capture.JPG" alt="simple react js English Dictionary"/></p>
+<p align="center"><img src="https://projects.mohamadhossein.ir/dictionary/static/media/English-Dictionary.JPG" alt="simple react js English Dictionary"/></p>
 
 **Demo:**
 https://www.projects.mohamadhossein.ir/dictionary/

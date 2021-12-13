@@ -1,0 +1,16 @@
+.play{
+    border: none;
+    background-color: #ffffff;
+    background-image: url(../asset/high-volume.png);
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.play:hover{
+    background-color: #e3fdf4;
+}

@@ -1,0 +1,40 @@
+.item{
+    background: #3d4655 ;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    color:#fff;
+}
+.App .item:nth-child(2){
+    background-color: #1B966A !important;
+    color: #fff !important  ;
+    border: solid 1px #D0C455;
+}
+.phonetic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.phonetics{
+    display: flex;
+    gap: 5px;
+    flex-flow: wrap;
+}
+hr{
+    border-color: #e9e9e91f;
+}
+.word{
+    display: flex;
+    gap:5px;
+    align-items: flex-start;
+    flex-flow: wrap;
+}
+.audioBox{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.phonetics-partOfSpeech{
+    
+}

@@ -1,3 +1,37 @@
+# Terms of Use
+This project is only a beta and personal version
+The API of this project :
+https://dictionaryapi.dev/
+
+
+# قوانین و شرایط استفاده
+این پروژه English Dictionary ، فقط یک پروژه شخصی و بتا و برای استفاده شخصی می باشد و شما می توانید آن را گسترش یا بهبود دهید.
+
+هرگونه پیشنهاد در جهت بهبود پروژه ها از جانب شما را پذیرا هستیم :)
+
+پروژه های موجود در لینک زیر:
+https://www.projects.mohamadhossein.ir/
+
+نیز صرفا برای به نمایش گذاشتن مهارت و نحوه کد نویسی طراح قرار داده شده اند.
+
+
+
+
+<p align="center"><img src="https://www.projects.mohamadhossein.ir/calculator/static/media/capture.JPG" alt="simple react js English Dictionary"/></p>
+
+**Demo:**
+https://www.projects.mohamadhossein.ir/dictionary/
+**other projects:**
+https://www.projects.mohamadhossein.ir/
+
+
+</> by: https://mohamadhossein.ir/
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

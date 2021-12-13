@@ -33,7 +33,6 @@ export default function Result({ Data }) {
 
                     </div>
                 </div>
-                <hr style={{ borderStyle: 'dashed' }} />
                 <div className='flex'>
 
                     {
@@ -83,9 +82,6 @@ export default function Result({ Data }) {
                                     {EXAMPLE && <><h3>EXAMPLE</h3><p>{item.definitions[0].example}</p></>}
                                     {SYNONYMS && <><h3>SYNONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].synonyms.join(",")))}</p></>}
                                     {ANTONYMS && <><h3>ANTONYMS</h3><p>{item.definitions[0].antonyms}</p></>}
-
-
-                                    <hr />
                                 </div>
 
                             )
@@ -93,7 +89,9 @@ export default function Result({ Data }) {
                         })
                     }
                 </div>
-
+                <div>
+                    {data.origin !== undefined && data.origin}
+                </div>
             </div>
 
         )

@@ -20,14 +20,13 @@
     flex-flow: wrap;
     min-height: 50px;
 }
-hr{
-    border-color: #e9e9e91f;
-}
+
 .word{
     display: flex;
     gap:5px;
     align-items: flex-start;
     flex-flow: wrap;
+    border-bottom: #e9e9e90d dashed 3px;
 }
 .audioBox{
     display: flex;
@@ -42,6 +41,9 @@ hr{
 color:#1B966A;
 font-size: 16px;
 margin-bottom: 0;
+}
+.readMore:not(:last-child){
+    border-bottom: #e9e9e90d solid 1px;
 }
 .readMore p{
     margin-top: 5px;

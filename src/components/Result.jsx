@@ -81,7 +81,7 @@ export default function Result({ Data }) {
                                     {DEFINITION && <><h3>DEFINITION</h3><p>{item.definitions[0].definition}</p></>}
                                     {EXAMPLE && <><h3>EXAMPLE</h3><p>{item.definitions[0].example}</p></>}
                                     {SYNONYMS && <><h3>SYNONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].synonyms.join(",")))}</p></>}
-                                    {ANTONYMS && <><h3>ANTONYMS</h3><p>{item.definitions[0].antonyms}</p></>}
+                                    {ANTONYMS && <><h3>ANTONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].antonyms.join(",")))}</p></>}
                                 </div>
 
                             )
@@ -90,7 +90,7 @@ export default function Result({ Data }) {
                     }
                 </div>
                 <div>
-                    {data.origin !== undefined && data.origin}
+                    {data.origin !== undefined && <><h3>ORIGIN</h3> {data.origin}</>}
                 </div>
             </div>
 

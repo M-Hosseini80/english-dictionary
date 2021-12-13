@@ -28,6 +28,6 @@
     background-image: url(../asset/left-arrow.png);
     background-size: 30px;
     background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 35px;
+    background-position: 97%;
+    padding-right: 50px;
 }

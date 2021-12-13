@@ -6,7 +6,8 @@ import Result from './components/Result';
 import axios from "axios"
 
 function App() {
-  const [value, setValue] = useState("hello");
+  var randomWords = require('random-words');
+  const [value, setValue] = useState(randomWords());
   const handleChange = (newValue) => {
     setValue(newValue)
   }
@@ -26,7 +27,7 @@ function App() {
             console.log(error)
           }
       }
-
+      window.scrollTo(0, 0)
       dictionaryAPI()
       // }, 2000);
 

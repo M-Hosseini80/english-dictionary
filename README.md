@@ -4,6 +4,9 @@ This project is only a beta and personal version
 The API of this project :
 https://dictionaryapi.dev/
 
+Generate one or more common English words library:
+https://www.npmjs.com/package/random-words
+
 
 # قوانین و شرایط استفاده
 این پروژه English Dictionary ، فقط یک پروژه شخصی و بتا و برای استفاده شخصی می باشد و شما می توانید آن را گسترش یا بهبود دهید.
@@ -15,7 +18,12 @@ https://www.projects.mohamadhossein.ir/
 
 نیز صرفا برای به نمایش گذاشتن مهارت و نحوه کد نویسی طراح قرار داده شده اند.
 
+ای پی آی استفاده شده در این پروژه برای معانی کلمات انگلیسی:
+https://dictionaryapi.dev/
 
+
+کتابخانه استفاده شده برای کلمات رندم :
+https://www.npmjs.com/package/random-words
 
 
 <p align="center"><img src="https://projects.mohamadhossein.ir/dictionary/static/media/English-Dictionary.JPG" alt="simple react js English Dictionary"/></p>

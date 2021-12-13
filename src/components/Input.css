@@ -10,10 +10,10 @@
     /* box-shadow: 0 0 15px 0 rgb(197 197 197/88%); */
     min-height: 45px;
     z-index: 1;
-    max-width: 790px;
+    max-width: 785px;
     margin-right: auto;
     margin-left:auto;
-    border: solid 1px #fff;
+    border: solid 3px #fff;
    
 }
 .input input{

@@ -21,7 +21,6 @@ https://www.projects.mohamadhossein.ir/
 ای پی آی استفاده شده در این پروژه برای معانی کلمات انگلیسی:
 https://dictionaryapi.dev/
 
-
 کتابخانه استفاده شده برای کلمات رندم :
 https://www.npmjs.com/package/random-words
 
@@ -30,6 +29,7 @@ https://www.npmjs.com/package/random-words
 
 **Demo:**
 https://www.projects.mohamadhossein.ir/dictionary/
+
 **other projects:**
 https://www.projects.mohamadhossein.ir/
 

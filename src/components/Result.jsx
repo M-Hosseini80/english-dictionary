@@ -4,13 +4,11 @@ import AudioComponent from './AudioComponent'
 
 export default function Result({ Data }) {
     // all data
-    // console.log(Data)
-
-    // let ourData = { partOfSpeechVal: '', originVal: '', exampleVal: '', definitionVal: '' };
 
     const iData = Data.map((data, index) => {
 
         return (
+            // actually I know I could use specific ITEM Component, But I prefer to put it here!
             <div className='item' key={index}>
                 <div className='word'>
                     <h1>{data.word}</h1>

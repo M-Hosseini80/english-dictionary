@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import './Result.css'
 import AudioComponent from './AudioComponent'
 
-export default function Result({ Data }) {
+export default function Result({ Data, setValues }) {
     // all data
+
+    const evHandler = useCallback(event => {
+        setValues(event.target.innerHTML)
+    }, [setValues])
+
+
+
 
     const iData = Data.map((data, index) => {
 
@@ -35,8 +42,6 @@ export default function Result({ Data }) {
 
                     {
                         data.meanings.map((item, index) => {
-
-
 
                             let DEFINITION = false;
                             let EXAMPLE = false;
@@ -72,13 +77,17 @@ export default function Result({ Data }) {
                                 }
                             }
 
-
                             return (
                                 <div className='readMore' key={index}>
                                     {item.partOfSpeech && <><h3>PART OF SPEECH</h3><p style={{ fontStyle: 'italic' }}>{item.partOfSpeech}</p></>}
                                     {DEFINITION && <><h3>DEFINITION</h3><p>{item.definitions[0].definition}</p></>}
                                     {EXAMPLE && <><h3>EXAMPLE</h3><p>{item.definitions[0].example}</p></>}
-                                    {SYNONYMS && <><h3>SYNONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].synonyms.join(",")))}</p></>}
+                                    {/* {SYNONYMS && <><h3>SYNONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].synonyms.join(",")))}</p></>} */}
+                                    {SYNONYMS && <><h3>SYNONYMS</h3> {item.definitions[0].synonyms.map((item, index) => {
+                                        return (
+                                            <React.Fragment key={item}><button onClick={evHandler} key={index}>{item}</button><span className='spotButton'>,</span></React.Fragment>
+                                        )
+                                    })}</>}
                                     {ANTONYMS && <><h3>ANTONYMS</h3><p>{JSON.parse(JSON.stringify(item.definitions[0].antonyms.join(",")))}</p></>}
                                 </div>
 

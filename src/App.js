@@ -12,12 +12,8 @@ function App() {
     setValue(newValue)
   }
 
-
-
-
   useEffect(
     () => {
-      // setTimeout(function () {
       const dictionaryAPI = async () => {
         if (value > "") try {
           const data = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${value}`);
@@ -29,24 +25,15 @@ function App() {
       }
       window.scrollTo(0, 0)
       dictionaryAPI()
-      // }, 2000);
-
     }, [value]
   )
-  // const word = value;
-  // const [word, setWord] = useState(value);
   const [dataWord, setDataWord] = useState([]);
 
-  // console.log(dataWord)
-
-
-  // console.log("Props in App :", value);
   return (
     <>
       <div className="App">
         <Input value={value} onChange={handleChange} />
-        {/* <Translator value={value}/> */}
-        <Result Data={dataWord} />
+        <Result Data={dataWord} setValues={setValue} />
 
       </div>
       <footer><p> &lt;/&gt; by: <a href="https://mohamadhossein.ir/">MohamadHossein.ir</a> </p><p><a rel="noreferrer" target="_blank" href="https://github.com/M-Hosseini80/english-dictionary">github / Terms of Use</a></p></footer>
